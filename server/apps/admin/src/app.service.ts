@@ -6,7 +6,7 @@ export class AppService {
     return 'Hello World!';
   }
   getText(name:string):string{
-    return `jhsello ${name}`
+    return `jhsddello ${name}`
   }
 }
 
