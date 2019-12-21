@@ -12,7 +12,7 @@ export class AppController {
   }
 
   @Get('/test')
-  getText(@Query("name") name:string):string{
-    return this.appService.getText(name)
+  getText(@Query('name') name: string): string {
+    return this.appService.getText(name);
   }
 }

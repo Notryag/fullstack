@@ -1,18 +1,17 @@
-import { prop, modelOptions } from '@typegoose/typegoose'
-import {ApiProperty} from '@nestjs/swagger'
-
+import { prop, modelOptions } from '@typegoose/typegoose';
+import { ApiProperty } from '@nestjs/swagger';
 
 @modelOptions({
-  schemaOptions:{
-    timestamps:true
-  }
+  schemaOptions: {
+    timestamps: true,
+  },
 })
-export class Episode{
-  @ApiProperty({ description: '课时名称'})
+export class Episode {
+  @ApiProperty({ description: '课时名称' })
   @prop()
-  name:string
-  
-  @ApiProperty({description:'内容'})
+  name: string;
+
+  @ApiProperty({ description: '内容' })
   @prop()
-  file:string
+  file: string;
 }

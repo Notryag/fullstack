@@ -7,11 +7,12 @@ import { ApiTags } from '@nestjs/swagger';
 
 @Controller('episodes')
 @Crud({
-  model:Episode
+  model: Episode,
 })
 @ApiTags('课时')
 export class EpisodesController {
-  constructor( 
-    @InjectModel(Episode) private readonly model: ReturnModelType<typeof Episode>  
-  ){}
+  constructor(
+    @InjectModel(Episode)
+    private readonly model: ReturnModelType<typeof Episode>,
+  ) {}
 }
